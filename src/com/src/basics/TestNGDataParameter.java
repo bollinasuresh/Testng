@@ -1,9 +1,15 @@
 package com.src.basics;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestNGDataParameter {
+	@Parameters("userName")
+	@Test
+	private void getParameter(String user) {
+		System.out.println("XmlParameter " + user);
+	}
 
 	@Test(dataProvider = "getData")
 	public void login(String user, String pass) {
