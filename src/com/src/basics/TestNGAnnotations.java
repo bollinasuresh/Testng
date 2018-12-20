@@ -22,8 +22,16 @@ public class TestNGAnnotations {
 		System.out.println("After Class");
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups="Testa")
 	public void appleTest() {
+
+		/*boolean flase = true;
+		Assert.assertFalse(flase);*/
+		System.out.println("Apple test");
+	}
+	
+	@Test(priority = 0, groups="TestB")
+	public void boyTest() {
 
 		boolean flase = true;
 		Assert.assertFalse(flase);

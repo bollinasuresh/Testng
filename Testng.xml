@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="testngbasics">
-
+	<listeners>
+		<listener class-name="com.inetbanking.utilities.Reporting" />
+	</listeners>
 	<test name="TestngFeatures">
 		<parameter name="userName" value="JavaSelenium"></parameter>
 		<classes>

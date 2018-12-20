@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="userName" value="Suresh"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.src.basics.TestNGDataParameter">
+      <class name="com.src.basics.RetryExample">
         <methods>
-          <include name="login"/>
+          <include name="testB"/>
         </methods>
-      </class> <!-- com.src.basics.TestNGDataParameter -->
+      </class> <!-- com.src.basics.RetryExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
